@@ -1,6 +1,6 @@
 # Playground for Scala concurrency concepts
 
-This is the companion repository for an upcoming [Zalando Tech Blog](https://tech.zalando.de/blog/) post.
+This is the companion repository for the [Zalando Tech Blog](https://tech.zalando.de/blog/) post ["Which shoe fits you? Comparing Akka Streams, Actors, and Plain Futures"](https://tech.zalando.de/blog/comparing-akka-streams-actors-and-plain-futures/).
 
 It provides a playground for playing around with the various ways of doing Scala concurrency.
 It can be used to familiarize yourself with the different concurrency concepts available to you in Scala.
