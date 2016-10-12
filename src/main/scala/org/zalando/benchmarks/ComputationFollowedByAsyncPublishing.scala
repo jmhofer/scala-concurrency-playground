@@ -40,8 +40,7 @@ class ComputationFollowedByAsyncPublishing {
   @Benchmark def bmParallelFutures(): Unit =  futures benchmark  1          // <=  44 threads ("Live peak" in JVisualVM)
   @Benchmark def bmBlocking():        Unit = blocking benchmark 64          // <= 549 threads ("Live peak" in JVisualVM)
   @Benchmark def bmStreams():         Unit =  streams benchmark  1          // <=  52 threads ("Live peak" in JVisualVM)
-
-//@Benchmark def bmRxScala():         Unit =       rx benchmark             // blows up with OutOfMemoryError :(
+  @Benchmark def bmRxScala():         Unit =        rx benchmark 1          // <= 50 threads
 
   @TearDown def tearDown(): Unit = system.terminate()
 }
